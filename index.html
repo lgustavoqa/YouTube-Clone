@@ -1,144 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone YouTube</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header-left">
-            <button>☰</button>
-            <img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-0-1536x1536.png" alt="YouTube Logo" width="130">
-        </div>
 
-         <div class="header-center">
-            <div class="search-box">
-            <input type="text" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button>Pesquisar</button>
-            </div>
-        </div>
-
-        <div class="header-right">
-            <button>Fazer Login</button>
-            <div class="theme-toggle" id="themeToggle">
-                <div class="toggle-circle"></div>
-             </div>
-        </div>
-
-    </header>
+  <header class="header">
 
     
-    <aside class="sidebar">
-        <nav>
-            <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Shorts</a></li>
-            <li><a href="#">Inscrições</a></li>
-            <li><a href="#">Você</a></li>
-            </ul>
-        </nav>
-    </aside>
+
+  <div class="header-left">
+    <span>☰</span>
+    <h2>YouTube</h2>
+  </div>
+
+  <div class="header-center">
+    <div class="search-box">
+      <input type="text" placeholder="Pesquisar">
+      <button>🔍</button>
+    </div>
+  </div>
+
+  <button id="themeToggle" class="theme-toggle">
+  🌙
+</button>
+
+  <div class="header-right">
+    <span>🔔</span>
+    <span>👤</span>
+  </div>
+
+</header>
+
   
+  <aside class="sidebar">
+    <nav>
+      <ul>
+       <li><a href="#">🏠 Início</a></li>
+       <li><a href="#">🎬 Shorts</a></li>
+       <li><a href="#">📺 Inscrições</a></li>
+       <li><a href="#">👤 Você</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-    <main>
-        <section class="categories">
-            <div class="category-list">
-            <button>Tudo</button>
-            <button>Jogos</button>
-            <button>Música</button>
-            <button>Crimson Desert</button>
-            <button>Riot Games</button>
-            <button>League of Legends</button>
-            <button>PC Gamer</button>
+  <main>
+
+  
+    <section class="categories">
+      <div class="category-list">
+        <button>Tudo</button>
+        <button>Jogos</button>
+        <button>Música</button>
+        <button>Crimson Desert</button>
+        <button>Riot Games</button>
+        <button>League of Legends</button>
+        <button>PC Gamer</button>
+      </div>
+    </section>
+
+   
+    <section class="videos">
+
+    
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
+          <img src="https://i.ytimg.com/vi/5btHAOtualI/maxresdefault.jpg">
+        </a>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
+            <h4>A nova Tecnologia do Jukera</h4>
+          </a>
+
+          <a href="https://www.youtube.com/jukeslol" target="_blank">
+            <p>Jukes</p>
+          </a>
+
+          <p>1,2 mi de visualizações • 1 dia atrás</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
+          <img src="https://i.ytimg.com/vi/5btHAOtualI/maxresdefault.jpg">
+        </a>
+
+        <div class="video-info">
+          <h4>Outro vídeo exemplo</h4>
+          <p>Canal Exemplo</p>
+          <p>500 mil visualizações • 2 dias atrás</p>
+        </div>
+      </div>
+
+    </section>
+
+   
+   <section class="shorts">
+     <h2>Shorts</h2>
+     <div class="shorts-container">
+        <div class="short-card">
+            <img src="https://i.ytimg.com/vi/8Faah-MKZyo/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLD3NaDJ9XgQF_PbKEGi8HF1xBtFeg&amp;usqp=CCk" alt="">
+            <a href="https://www.youtube.com/shorts/8Faah-MKZyo" target="_blank">
+                <div class="short-info">
+                    <h4>Momentos que os personagens de Dragonball Foram Nerfados #dragonball #dbz #dbs</h4></a>
+                    <p>1,5 mi de visualizações</p>
+                </div>
             </div>
-        </section>
-
-        <section class="videos">
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                <img src="https://i.ytimg.com/vi/5btHAOtualI/maxresdefault.jpg" width="300">
-                </a>
-                <div class="video-info">
-                    <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                    <h4>A nova Tecnologia do Jukera</h4>
-                    </a>
-                
-                <a href="https://www.youtube.com/jukeslol" target="_blank">
-                    Jukes
-                </a>
-                    <p>1,2 mi de visualizações - 1 dia atrás</p>
+    <div class="short-card">
+            <img src="https://i.ytimg.com/vi/0jmoHZE07DU/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLC0OOZagML6_f_ktSkupCsfo3JOPw&amp;usqp=CCk" alt="">
+            <a href="https://www.youtube.com/shorts/0jmoHZE07DU" target="_blank">
+                <div class="short-info">
+                    <h4>Qual elogio mais ineficaz do mundo? - CLÓVIS DE BARROS FILHO</h4></a>
+                    <p>2,4 mi visualizações</p>
                 </div>
-            </div>                
-        </section>
-
-        <section class="videos">
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                <img src="https://i.ytimg.com/vi/5btHAOtualI/maxresdefault.jpg" width="300">
-                </a>
-                <div class="video-info">
-                    <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                    <h4>A nova Tecnologia do Jukera</h4>
-                    </a>
-                
-                <a href="https://www.youtube.com/jukeslol" target="_blank">
-                    Jukes
-                </a>
-                    <p>1,2 mi de visualizações - 1 dia atrás</p>
+            </div>
+    <div class="short-card">
+        <a href="https://www.youtube.com/shorts/LekRuWP3zMQ" target="_blank">
+            <img src="https://i.ytimg.com/vi/LekRuWP3zMQ/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLB-CLZ0mHIne5aZkV5LMQ0u0hRffw&amp;usqp=CCk">
+                <div class="short-info">
+                    <h4>Comigo foi assim 🥹 #java #javascript #programador</h4></a>
+                    <p>255 mil de visualizações</p>
                 </div>
-            </div>                
-        </section>
-
-
-        <section class="videos">
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                <img src="https://i.ytimg.com/vi/5btHAOtualI/maxresdefault.jpg" width="300">
-                </a>
-                <div class="video-info">
-                    <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                    <h4>A nova Tecnologia do Jukera</h4>
-                    </a>
-                
-                <a href="https://www.youtube.com/jukeslol" target="_blank">
-                    Jukes
-                </a>
-                    <p>1,2 mi de visualizações - 1 dia atrás</p>
+            </div>
+    <div class="short-card">
+            <img src="https://i.ytimg.com/vi/8X08j4ca_jc/oar1.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLAvMsJNzSAr1gBSeZe67wz7ohT63w&amp;usqp=CCk">
+            <a href="https://www.youtube.com/shorts/8X08j4ca_jc" target="_blank">
+                <div class="short-info">
+                    <h4>A Inteligência artificial estava certa? #dbz #dragonball #goku</h4></a>
+                    <p>1,7 mi de visualizações • 3 dias atrás</p>
                 </div>
-            </div>                
+            </div>
+        </div>
         </section>
-
-
-        <section class="videos">
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                <img src="https://i.ytimg.com/vi/5btHAOtualI/maxresdefault.jpg" width="300">
-                </a>
-                <div class="video-info">
-                    <a href="https://www.youtube.com/watch?v=5btHAOtualI" target="_blank">
-                    <h4>A nova Tecnologia do Jukera</h4>
-                    </a>
-                
-                <a href="https://www.youtube.com/jukeslol" target="_blank">
-                    Jukes
-                </a>
-                    <p>1,2 mi de visualizações - 1 dia atrás</p>
-                </div>
-            </div>                
-        </section>
-
-
-
-        <section class="shorts">
-            <h2>Shorts</h2>
-        </section>
-
-                        
     </main>
-
-
- <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 /* BASE */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 /* HEADER */
@@ -81,10 +81,11 @@ body {
 }
 
 .sidebar a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 10px 20px;
-  text-decoration: none;
-  color: #000;
+  border-radius: 10px;
 }
 
 .sidebar a:hover {
@@ -95,7 +96,7 @@ body {
 main {
   margin-top: 60px;
   margin-left: 200px;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 /* CATEGORIES */
@@ -129,6 +130,11 @@ main {
 /* VIDEO CARD */
 .video-card {
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
 }
 
 .video-card img {
@@ -142,8 +148,8 @@ main {
 }
 
 .video-info h4 {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .video-info a {
@@ -159,63 +165,77 @@ main {
   font-size: 14px;
   color: #555;
 }
-/* DARK MODE VARIABLES */
-:root {
-  --bg: #f9f9f9;
-  --text: #000;
-  --card: #fff;
+body.dark-mode {
+  background-color: #0f0f0f;
+  color: #fff;
 }
 
-.dark-mode {
-  --bg: #0f0f0f;
-  --text: #fff;
-  --card: #181818;
+body.dark-mode .header,
+body.dark-mode .sidebar {
+  background-color: #0f0f0f;
+  border-color: #303030;
 }
 
-/* APPLY VARIABLES */
-body {
-  background-color: var(--bg);
-  color: var(--text);
+body.dark-mode .video-info p {
+  color: #aaa;
 }
 
-.header,
-.sidebar {
-  background: var(--card);
+body.dark-mode .category-list button {
+  background: #272727;
+  color: #fff;
 }
 
-.video-info p {
-  color: gray;
+body.dark-mode .category-list button:hover {
+  background: #3f3f3f;
 }
 
-/* TOGGLE BUTTON */
 .theme-toggle {
-  width: 50px;
-  height: 25px;
-  background: #ccc;
-  border-radius: 50px;
-  position: relative;
+  background: none;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
-  transition: background 0.3s;
+  color: inherit;
+}
+/* SHORTS */
+.shorts {
+  margin-top: 40px;
 }
 
-/* CIRCLE */
-.toggle-circle {
-  width: 20px;
-  height: 20px;
-  background: yellow;
-  border-radius: 50%;
-  position: absolute;
-  top: 2.5px;
-  left: 3px;
-  transition: all 0.3s ease;
+.shorts h2 {
+  margin-bottom: 15px;
 }
 
-/* DARK MODE ACTIVE */
-.dark-mode .theme-toggle {
-  background: #333;
+/* Container horizontal */
+.shorts-container {
+  display: flex;
+  gap: 15px;
+  scroll-behavior: smooth;
 }
 
-.dark-mode .toggle-circle {
-  transform: translateX(25px);
-  background: #fff;
+/* Card vertical */
+.short-card {
+  min-width: 150px;
+  max-width: 150px;
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Imagem estilo shorts (vertical) */
+.short-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Texto */
+.short-card p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.short-info {
+  margin-top: 8px;
 }
